@@ -1,5 +1,5 @@
-import { defineConfig } from "vite";
-import dts from "vite-plugin-dts";
+import { defineConfig } from "vitest/config"
+import dts from "vite-plugin-dts"
 import { resolve } from "path"
 
 export default defineConfig({
@@ -7,9 +7,9 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "@designbycode/luhn-algorithm",
-      fileName: "index"
+      fileName: "index",
     },
     minify: "terser",
   },
   plugins: [dts()],
-});
+})
