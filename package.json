@@ -1,6 +1,6 @@
 {
   "name": "@designbycode/luhn-algorithm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Luhn Algorithm is a simple checksum formula used to validate a variety of identification numbers, such as credit card numbers, IMEI numbers, and others. This documentation provides an overview of the Luhn Algorithm implementation in PHP, including examples and use cases.",
   "main": "/dist/index.umd.cjs",
   "module": "./dist/index.js",
