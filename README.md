@@ -10,6 +10,21 @@
 
 [![NPM](https://nodei.co/npm/@designbycode/luhn-algorithm.png)](https://nodei.co/npm/@designbycode/luhn-algorithm/)
 
+* [Installation](#installation)
+    * [Using pnpm](#using-pnpm)
+    * [Using npm](#using-npm)
+    * [Using yarn](#using-yarn)
+* [Usage](#usage)
+* [Functions](#functions)
+    * [isValid](#isvalid)
+    * [generate](#generate)
+    * [getDigit](#getdigit)
+    * [withoutDigit](#withoutdigit)
+    * [validateAndSuggest](#validateandsuggest)
+* [License](#license)
+* [Contributing](#contributing)
+* [Acknowledgments](#acknowledgments)
+
 The Luhn Algorithm plugin is a JavaScript library that provides a set of functions to validate and generate numbers using the Luhn algorithm, also known as the Modulus 10 or Mod 10 algorithm. This algorithm is widely used to validate
 various identification numbers, such as credit card numbers, IMEI numbers, and others.
 
@@ -109,11 +124,11 @@ console.log(result); // { isValid: false, suggestedDigit: "6" }
 
 ## License
 
-The Luhn Algorithm plugin is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributing
 
-Contributions to the Luhn Algorithm plugin are welcome! Please open a pull request or issue in the GitHub repository.
+Contributions to this plugin are welcome! If you encounter any issues, have feature requests, or want to improve the plugin, feel free to create a pull request or submit an issue in the GitHub repository.
 
 ## Acknowledgments
 
