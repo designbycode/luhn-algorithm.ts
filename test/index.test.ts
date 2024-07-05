@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import LuhnAlgorithm from "@/src"
+import LuhnAlgorithm from "../src/index"
 
 describe("LuhnAlgorithm", () => {
   it("isValid returns true for a valid Luhn number", () => {
