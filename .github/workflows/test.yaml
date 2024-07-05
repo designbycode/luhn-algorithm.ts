@@ -1,4 +1,4 @@
-name: 'Test'
+name: "Test"
 on:
   push:
 
@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 20 ]
+        node-version: [20]
 
     permissions:
       # Required to check out the code
@@ -23,16 +23,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-      - name: 'Install Deps'
-        run: pnpm install --frozen-lockfile
+          cache: "pnpm"
+      # - name: 'Install Deps'
+      #   run: pnpm install --frozen-lockfile
 
       #      - name: "enable coverage"
       #        run: npx vitest --coverage.enabled true
-      - name: 'Test'
+      - name: "Test"
         run: pnpm test
       #      - name: 'Test coverage'
       #        run: npx vitest --coverage
-      - name: 'Report Coverage'
+      - name: "Report Coverage"
         if: always() # Also generate the report if tests are failing
         uses: davelosert/vitest-coverage-report-action@v2
