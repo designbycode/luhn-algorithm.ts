@@ -8,6 +8,14 @@
   "author": "Claude Myburgh <claude@designbycode.co.za>",
   "license": "MIT",
   "types": "./dist/index.d.ts",
+  "keywords": [
+    "Luhn Algorithm",
+    "Modulus 10",
+    "Mod 10",
+    "credit card numbers validation",
+    "ID validation",
+    "IMEI numbers validation"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
