@@ -26,13 +26,5 @@ jobs:
           cache: "pnpm"
       # - name: 'Install Deps'
       #   run: pnpm install --frozen-lockfile
-
-      #      - name: "enable coverage"
-      #        run: npx vitest --coverage.enabled true
       - name: "Test"
         run: pnpm test
-      #      - name: 'Test coverage'
-      #        run: npx vitest --coverage
-      - name: "Report Coverage"
-        if: always() # Also generate the report if tests are failing
-        uses: davelosert/vitest-coverage-report-action@v2
